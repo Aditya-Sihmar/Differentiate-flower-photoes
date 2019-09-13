@@ -158,7 +158,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 In the cell below, train the model using the **fit_generator** function instead of the usual **fit** function. We have to use the `fit_generator` function because we are using the **ImageDataGenerator** class to generate batches of training and validation data for the model.
 """
 
-epochs = 200
+epochs = 70
 
 history = model.fit_generator(train_data_gen, epochs=epochs, validation_data=val_data_gen, shuffle=True, steps_per_epoch=29, validation_steps=20)
 
